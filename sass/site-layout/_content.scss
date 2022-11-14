@@ -1,0 +1,130 @@
+
+.landingPage {
+    text-align: center;
+    background-color: $color-primary-light;
+    padding: 10% 0;
+    h1 {
+        color: white;
+        margin:0 1rem;
+    } 
+    p {
+        color: white;
+    }
+}
+
+main {
+
+    h2 {
+        font-weight: $medium-weight;
+        color: $color-primary-light;
+        span {
+            color: $color-secondary;
+            font-weight: $bold-weight;
+        }
+    }
+
+    section {
+        padding: 3.5% 3.5% 0 3.5%;
+
+    }
+
+    .featureOne {
+        @include respond(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            
+            .feature-wrapper {
+                padding: 3rem;
+            }
+            img {
+                max-width: 500px;
+            }
+        }
+        
+       
+    }
+    .featureTwo {
+        background-color: $color-accent-orange;
+        @include respond(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+            .feature-wrapper {
+                padding: 3rem;
+                grid-column: 2/-1;
+                grid-row: 1/2;
+                
+            }
+            img {
+                grid-column: 1/-1;
+                grid-row: 1/2;
+                max-width: 500px;
+            }
+        }
+    }
+
+    .featureThree {
+        h2 {
+            padding-right: 5rem;
+        }
+        @include respond(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            
+            .feature-wrapper {
+                padding: 3rem;
+            }
+            img {
+                max-width: 500px;
+            }
+        }
+
+    }
+
+    .comingSoon {
+        
+        background-color: $color-secondary;
+        text-align: center;
+        
+        p, h1 {
+            color: white;
+        }
+
+        span{
+            font-weight: $bold-weight;
+            font-size: 1.4rem;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+    .teamSection {
+        background-color: $color-accent-blue;
+        text-align: center;
+        h1 {
+            color: $color-primary-light;
+
+
+        }
+
+        
+    }
+    @include respond(medium) {
+        
+        .feature-wrapper {
+            padding: 3rem;
+        }
+       
+    }
+
+}
+
+
+
+
+

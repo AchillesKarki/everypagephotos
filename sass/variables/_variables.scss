@@ -1,0 +1,19 @@
+@import 'color';
+@import 'fonts';
+
+// RESPONSIVE BREAKPOINTS==========
+$bp-largest: 1200px;
+$bp-large: 900px;
+$bp-medium: 750px;
+$bp-small: 500px;
+
+//FONT WEIGHT=================
+$hairline-weight: 100;
+$thin-weight:     200;
+$light-weight:    300;
+$normal-weight:   400;
+$medium-weight:   500;
+$semibold-weight: 600;
+$bold-weight:     700;
+$xbold-weight:    800;
+$black-weight:    900;

@@ -1,0 +1,98 @@
+header {
+    // background-image: url("../../Photos/background-book1.png");
+    background-color: $color-accent-blue;
+    .topNavigation {
+        text-align: center;
+        img {
+            max-width: 271px;
+            
+
+        }   
+        @include respond(medium) {
+            img {
+                max-width: 527px;
+            }
+        }
+        
+    }
+    
+    
+}
+
+//nav=================
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+}
+
+// FOOTER===================
+footer {
+    padding: 3.5% 3.5% 0 3.5%;
+
+    @include respond(large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+    .comingSoonApp {
+        padding: 10%;
+        h2 {
+            color: $color-primary-light;
+            text-align:center;
+        }
+
+        img[alt~="EverypageLogo"] {
+            display: none;
+        }
+
+        @include respond(medium) {
+            img[alt~="EverypageLogo"] {
+
+                display: unset;
+                max-width: 94px;
+                @include centerContents
+                
+            }
+    
+        }
+        .comingsoon-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+
+            p {
+                font-weight: $bold-weight;
+            }
+        }
+
+
+    }
+
+    div:nth-of-type(2) {
+        text-align: center;
+        font-size: 0.8em;
+        grid-column: 2/-1;
+        color: $color-primary-light;
+
+        @include respond(large) {
+            text-align: right;
+        }
+    }
+
+ 
+   
+
+}
+
+
+
+
+

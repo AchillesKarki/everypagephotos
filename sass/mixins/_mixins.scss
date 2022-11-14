@@ -1,0 +1,33 @@
+@mixin centerItems {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin centerContents {
+    display: block;
+    margin: auto;
+}
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+        @media only screen and (min-width: $bp-small) {
+            @content;
+        } //500px
+    }
+    @if $breakpoint == medium {
+        @media only screen and (min-width: $bp-medium) {
+            @content;
+        } //750px
+    }
+    @if $breakpoint == large {
+        @media only screen and (min-width: $bp-large) {
+            @content;
+        } //900px
+    }
+    @if $breakpoint == largest {
+        @media only screen and (min-width: $bp-largest) {
+            @content;
+        } //1200px
+    }
+}
