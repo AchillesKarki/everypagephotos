@@ -1,9 +1,32 @@
 
+.navWrapper {
+    background-color: $color-white;
+}
+
 nav.menu-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    font-family: $font_serif;
+
+    .logo {
+        margin: 0.2rem 0;
+        font-weight: 500;
+        font-size: 2.75rem;
+        color: $color-title-light;
+
+        b {
+            font-weight: 700;
+            color: $color-title-light;
+        }
+    }  
+
     ul {
         list-style-type: none;
         display: flex;
-        // flex-flow: column wrap;
         gap: 1rem;
         padding-left: 0;
         // font-size: 1.5rem;
@@ -12,10 +35,10 @@ nav.menu-header {
     
         a {
             text-decoration: none;
-            color: $color_links_header_footer;
+            color: $color-primary-light;
         }
         a:hover {
-            color: $color_links_hover;
+            color: $color-primary;
         }
         @include respond(medium) {
             flex-flow: row wrap;

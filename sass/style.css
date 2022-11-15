@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;500;600;700&display=swap");
 /* RESET ========================= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -588,6 +589,39 @@ main .teamSection h1 {
 }
 
 /* NAVIGATION ========================= */
+.navWrapper {
+  background-color: #FFFFFF;
+}
+
+nav.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  font-family: "Quicksand", georgia, times, "times new roman", serif;
+}
+
+nav.menu-header .logo {
+  margin: 0.2rem 0;
+  font-weight: 500;
+  font-size: 2.75rem;
+  color: #0B4F76;
+}
+
+nav.menu-header .logo b {
+  font-weight: 700;
+  color: #0B4F76;
+}
+
 nav.menu-header ul {
   list-style-type: none;
   display: -webkit-box;
@@ -605,11 +639,11 @@ nav.menu-header ul {
 
 nav.menu-header ul a {
   text-decoration: none;
-  color: #44280f;
+  color: #085076;
 }
 
 nav.menu-header ul a:hover {
-  color: #a75a15;
+  color: #084063;
 }
 
 @media only screen and (min-width: 750px) {
