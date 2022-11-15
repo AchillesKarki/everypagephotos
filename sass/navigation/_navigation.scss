@@ -1,21 +1,33 @@
 
 .navWrapper {
+    position: fixed;
+    width: 100%;
     background-color: $color-white;
+    z-index: 100;
 }
 
-nav.menu-header {
+.show {
+    opacity: 100%;
+    transition: opacity 0.2s linear;
+}
+
+.hide {
+    opacity: 0%;
+    transition: opacity 0.2s linear;
+}
+
+nav.menu-header-desk {
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
     padding: 0 3rem;
     font-family: $font_serif;
 
     .logo {
-        margin: 0.2rem 0;
+        margin: 0.2rem 0 0.5rem 0;
         font-weight: 500;
-        font-size: 2.75rem;
+        font-size: 2rem;
         color: $color-title-light;
 
         b {
@@ -25,28 +37,55 @@ nav.menu-header {
     }  
 
     ul {
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-        padding-left: 0;
-        // font-size: 1.5rem;
+        display: none;
+    }
 
-        @include centerItems();
+    .hamburger {
+        display: block;
+        justify-self: center;
+        align-self: center;
+        color: $color-primary-light;
+        font-size: 1.5rem;
+    }
+
     
-        a {
-            text-decoration: none;
-            color: $color-primary-light;
+    @include respond(medium) {
+        
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .logo {
+            font-size: 2.75rem;
+        }  
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            padding-left: 0;
+            font-weight: 700;
+    
+            @include centerItems();
+        
+            a {
+                text-decoration: none;
+                color: $color-primary-light;
+            }
+            a:hover {
+                color: $color-primary;
+            }
+
+            @include respond(medium) {
+                flex-flow: row wrap;
+                gap: 4rem;
+            }
         }
-        a:hover {
-            color: $color-primary;
-        }
-        @include respond(medium) {
-            flex-flow: row wrap;
-            // font-size: 1rem;
-            gap: 4rem;
+
+        .hamburger {
+            display: none;
         }
     }
-    
+  
     
     
 }

@@ -385,6 +385,8 @@ li a {
 
 footer {
   padding: 3.5% 3.5% 0 3.5%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 900px) {
@@ -590,10 +592,25 @@ main .teamSection h1 {
 
 /* NAVIGATION ========================= */
 .navWrapper {
+  position: fixed;
+  width: 100%;
   background-color: #FFFFFF;
+  z-index: 100;
 }
 
-nav.menu-header {
+.show {
+  opacity: 100%;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.hide {
+  opacity: 0%;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+nav.menu-header-desk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,55 +621,82 @@ nav.menu-header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 0 3rem;
   font-family: "Quicksand", georgia, times, "times new roman", serif;
 }
 
-nav.menu-header .logo {
-  margin: 0.2rem 0;
+nav.menu-header-desk .logo {
+  margin: 0.2rem 0 0.5rem 0;
   font-weight: 500;
-  font-size: 2.75rem;
+  font-size: 2rem;
   color: #0B4F76;
 }
 
-nav.menu-header .logo b {
+nav.menu-header-desk .logo b {
   font-weight: 700;
   color: #0B4F76;
 }
 
-nav.menu-header ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  padding-left: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+nav.menu-header-desk ul {
+  display: none;
 }
 
-nav.menu-header ul a {
-  text-decoration: none;
+nav.menu-header-desk .hamburger {
+  display: block;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #085076;
-}
-
-nav.menu-header ul a:hover {
-  color: #084063;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 750px) {
-  nav.menu-header ul {
+  nav.menu-header-desk {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  nav.menu-header-desk .logo {
+    font-size: 2.75rem;
+  }
+  nav.menu-header-desk ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+    font-weight: 700;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav.menu-header-desk ul a {
+    text-decoration: none;
+    color: #085076;
+  }
+  nav.menu-header-desk ul a:hover {
+    color: #084063;
+  }
+}
+
+@media only screen and (min-width: 750px) and (min-width: 750px) {
+  nav.menu-header-desk ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     gap: 4rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  nav.menu-header-desk .hamburger {
+    display: none;
   }
 }
 

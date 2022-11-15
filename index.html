@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EveryPage: Never Stop Reading</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body>
     <header>
         <div class="topNavigation">
-            <div class="navWrapper">
-                <nav class="menu-header">
+            <div class="navWrapper" id="navWrapper">
+                <nav class="menu-header-desk">
                     <p class="logo">
                         every<b>page</b>
                     </p>
+                    <i class="fa-solid fa-bars hamburger"></i>
                     <ul>
                         <li><a href="#">about</a></li>
                         <li><a href="#">features</a></li>
@@ -187,3 +188,18 @@
 </body>
 
 </html>
+
+<script>
+    myID = document.getElementById("navWrapper");
+
+    var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 100) {
+            myID.className = "navWrapper show"
+        } else {
+            myID.className = "navWrapper hide"
+        }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+</script>

@@ -1,8 +1,4 @@
 
-
-
-
-
 main {
 
     .landingPage {
@@ -101,8 +97,6 @@ main {
     }
 
     .comingSoon {
-        
-        
         text-align: center;
         
         p, h1 {
@@ -123,17 +117,14 @@ main {
     .teamSectionWrapper {
         background-color: $color-accent-blue;
     }
-    
+
     .teamSection {
         text-align: center;
         h1 {
             color: $color-primary-light;
-
-
-        }
-
-        
+        }   
     }
+    
     @include respond(medium) {
         
         .feature-wrapper {
