@@ -1,22 +1,16 @@
 header {
-    // background-image: url("../../Photos/background-book1.png");
     background-color: $color-accent-blue;
     .topNavigation {
         text-align: center;
         img {
             max-width: 271px;
-            
-
         }   
         @include respond(medium) {
             img {
                 max-width: 527px;
             }
-        }
-        
-    }
-    
-    
+        }   
+    }   
 }
 
 //nav=================
@@ -31,6 +25,7 @@ li a {
 }
 
 // FOOTER===================
+
 footer {
     padding: 3.5% 3.5% 0 3.5%;
 
@@ -72,8 +67,6 @@ footer {
                 font-weight: $bold-weight;
             }
         }
-
-
     }
 
     div:nth-of-type(2) {
@@ -86,10 +79,6 @@ footer {
             text-align: right;
         }
     }
-
- 
-   
-
 }
 
 

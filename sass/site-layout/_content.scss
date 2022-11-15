@@ -1,18 +1,22 @@
 
-.landingPage {
-    text-align: center;
-    background-color: $color-primary-light;
-    padding: 10% 0;
-    h1 {
-        color: white;
-        margin:0 1rem;
-    } 
-    p {
-        color: white;
-    }
-}
+
+
+
 
 main {
+
+    .landingPage {
+        text-align: center;
+        background-color: $color-primary-light;
+        padding: 10% 0;
+        h1 {
+            color: white;
+            margin:0 1rem;
+        } 
+        p {
+            color: white;
+        }
+    }
 
     h2 {
         font-weight: $medium-weight;
@@ -24,11 +28,17 @@ main {
     }
 
     section {
+        max-width: 1440px;
+        margin: 0 auto;
         padding: 3.5% 3.5% 0 3.5%;
+    }
 
+    .heroWrapper {
+        background-color: $color-primary-light;
     }
 
     .featureOne {
+
         @include respond(large) {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -40,12 +50,14 @@ main {
             img {
                 max-width: 500px;
             }
-        }
-        
-       
+        }  
     }
-    .featureTwo {
+
+    .sectionTwoWrapper {
         background-color: $color-accent-orange;
+    }
+    
+    .featureTwo {
         @include respond(large) {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -84,9 +96,13 @@ main {
 
     }
 
+    .comingSoonWrapper {
+        background-color: $color-secondary;
+    }
+
     .comingSoon {
         
-        background-color: $color-secondary;
+        
         text-align: center;
         
         p, h1 {
@@ -103,8 +119,12 @@ main {
             text-transform: uppercase;
         }
     }
-    .teamSection {
+
+    .teamSectionWrapper {
         background-color: $color-accent-blue;
+    }
+    
+    .teamSection {
         text-align: center;
         h1 {
             color: $color-primary-light;

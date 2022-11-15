@@ -448,18 +448,18 @@ footer div:nth-of-type(2) {
   }
 }
 
-.landingPage {
+main .landingPage {
   text-align: center;
   background-color: #085076;
   padding: 10% 0;
 }
 
-.landingPage h1 {
+main .landingPage h1 {
   color: white;
   margin: 0 1rem;
 }
 
-.landingPage p {
+main .landingPage p {
   color: white;
 }
 
@@ -474,7 +474,13 @@ main h2 span {
 }
 
 main section {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 3.5% 3.5% 0 3.5%;
+}
+
+main .heroWrapper {
+  background-color: #085076;
 }
 
 @media only screen and (min-width: 900px) {
@@ -493,7 +499,7 @@ main section {
   }
 }
 
-main .featureTwo {
+main .sectionTwoWrapper {
   background-color: #FDF5EA;
 }
 
@@ -541,8 +547,11 @@ main .featureThree h2 {
   }
 }
 
-main .comingSoon {
+main .comingSoonWrapper {
   background-color: #C07D53;
+}
+
+main .comingSoon {
   text-align: center;
 }
 
@@ -560,8 +569,11 @@ main .comingSoon h1 {
   text-transform: uppercase;
 }
 
-main .teamSection {
+main .teamSectionWrapper {
   background-color: #EBF3F8;
+}
+
+main .teamSection {
   text-align: center;
 }
 
