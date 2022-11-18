@@ -349,7 +349,7 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: "Quicksand", georgia, times, "times new roman", serif;
 }
 
@@ -363,13 +363,107 @@ header .topNavigation {
   text-align: center;
 }
 
-header .topNavigation img {
+header .topNavigation .bookshelfBackground {
+  background-image: url("../../Photos/background-book1.png");
+  background-repeat: no-repeat;
+  background-size: 1440px 720px;
+  background-position-x: center;
+}
+
+header .topNavigation .bookshelfBackground .bookBackground {
+  background-image: url("../../Photos/background-book2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 200px;
+}
+
+header .topNavigation .bookshelfBackground .bookBackground img {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
   max-width: 271px;
 }
 
 @media only screen and (min-width: 750px) {
-  header .topNavigation img {
+  header .topNavigation .bookshelfBackground .bookBackground img {
     max-width: 527px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 300px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 200px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 150px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-bottom: 14rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 100px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-bottom: 16rem;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 150px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-bottom: 18rem;
+  }
+}
+
+@media screen and (min-width: 2650px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 120px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 120px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-top: 15rem;
+    margin-bottom: 22rem;
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  header .topNavigation .bookshelfBackground .bookBackground {
+    background-position-y: 120px;
+  }
+  header .topNavigation .bookshelfBackground .bookBackground img {
+    margin-top: 15rem;
+    margin-bottom: 22rem;
   }
 }
 
@@ -387,6 +481,10 @@ footer {
   padding: 3.5% 3.5% 0 3.5%;
   max-width: 1440px;
   margin: 0 auto;
+  background-image: url("../../Photos/BG_lets connect.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 }
 
 @media only screen and (min-width: 900px) {
@@ -396,6 +494,26 @@ footer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+}
+
+footer .contactPage h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+footer .contactPage p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  footer .contactPage h2 {
+    font-size: 3rem;
+  }
+  footer .contactPage p {
+    margin-top: 0;
+    font-size: 1.25rem;
   }
 }
 
@@ -435,7 +553,19 @@ footer .comingSoonApp .comingsoon-wrapper {
 }
 
 footer .comingSoonApp .comingsoon-wrapper p {
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #085076;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  footer .comingSoonApp h2 {
+    font-size: 2.5rem;
+  }
+  footer .comingSoonApp p {
+    font-size: 1.5rem;
+  }
 }
 
 footer div:nth-of-type(2) {
@@ -453,8 +583,7 @@ footer div:nth-of-type(2) {
 
 main .landingPage {
   text-align: center;
-  background-color: #085076;
-  padding: 10% 0;
+  padding: 2% 0;
 }
 
 main .landingPage h1 {
@@ -466,14 +595,30 @@ main .landingPage p {
   color: white;
 }
 
+main .feature-wrapper {
+  font-size: 1rem;
+}
+
 main h2 {
   font-weight: 500;
   color: #085076;
 }
 
 main h2 span {
-  color: #C07D53;
+  color: #DC924D;
   font-weight: 700;
+}
+
+@media screen and (min-width: 750px) {
+  main h2 {
+    font-size: 2.25rem;
+  }
+  main h2 span {
+    font-size: 3rem;
+  }
+  main .feature-wrapper {
+    font-size: 1.25rem;
+  }
 }
 
 main section {
@@ -483,7 +628,10 @@ main section {
 }
 
 main .heroWrapper {
-  background-color: #085076;
+  background-image: url("../../Photos/background-book3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 @media only screen and (min-width: 900px) {
@@ -551,37 +699,202 @@ main .featureThree h2 {
 }
 
 main .comingSoonWrapper {
-  background-color: #C07D53;
+  background-image: url("/Photos/merged.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main .comingSoon {
+main .comingSoonWrapper .comingSoon {
   text-align: center;
+  padding: 4rem 1.25rem;
 }
 
-main .comingSoon p, main .comingSoon h1 {
+main .comingSoonWrapper .comingSoon p, main .comingSoonWrapper .comingSoon h1 {
   color: white;
 }
 
-main .comingSoon span {
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-transform: capitalize;
+main .comingSoonWrapper .comingSoon .middleComponent {
+  margin: 1rem auto 1.5rem auto;
 }
 
-main .comingSoon h1 {
+main .comingSoonWrapper .comingSoon .t1 {
   text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+main .comingSoonWrapper .comingSoon .t2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+main .comingSoonWrapper .comingSoon .t3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+main .comingSoonWrapper .comingSoon .t4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem auto;
+}
+
+@media screen and (min-width: 750px) {
+  main .comingSoonWrapper .comingSoon {
+    padding: 10rem 0;
+  }
+  main .comingSoonWrapper .comingSoon .middleComponent {
+    margin: 1.5rem auto 5rem auto;
+    max-width: 550px;
+  }
+  main .comingSoonWrapper .comingSoon .t1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  main .comingSoonWrapper .comingSoon .t2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin: 0;
+  }
+  main .comingSoonWrapper .comingSoon .t3 {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  main .comingSoonWrapper .comingSoon .t4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem auto;
+  }
 }
 
 main .teamSectionWrapper {
   background-color: #EBF3F8;
 }
 
-main .teamSection {
+main .teamSectionWrapper .teamSection {
   text-align: center;
+  padding-bottom: 4rem;
+  max-width: 1440px;
 }
 
-main .teamSection h1 {
+main .teamSectionWrapper .teamSection h1 {
+  font-size: 1.5rem;
   color: #085076;
+  margin-bottom: 1.5rem;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer {
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember {
+  max-width: 240px;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .card {
+  position: relative;
+  display: inline-block;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .card .img-bot {
+  visibility: visible;
+  opacity: 100%;
+  -webkit-transition: visibility 0.3s, opacity 0.3s linear;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .card .img-top {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transition: visibility 0.3s, opacity 0.3s linear;
+  transition: visibility 0.3s, opacity 0.3s linear;
+  opacity: 0%;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .card:hover .img-top {
+  visibility: visible;
+  opacity: 100%;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .card:hover .img-bot {
+  visibility: hidden;
+  opacity: 0%;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember img {
+  border-radius: 10px;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember h3, main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamPosition, main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamSocial {
+  text-align: left;
+  font-weight: 700;
+  font-family: "Quicksand", georgia, times, "times new roman", serif;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember h3 {
+  font-size: 1rem;
+  color: #084063;
+  margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  main .teamSectionWrapper .teamSection .teamContainer .teamMember h3 {
+    font-size: 1.5rem;
+  }
+  main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamPosition {
+    font-size: 1.25rem;
+  }
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamPosition {
+  color: #DC924D;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamSocial {
+  font-size: 1.5rem;
+}
+
+main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamSocial .fa-linkedin {
+  color: #0578cb;
+}
+
+@media screen and (min-width: 750px) {
+  main .teamSectionWrapper .teamSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  main .teamSectionWrapper .teamSection .teamContainer {
+    margin: 0 auto;
+    max-width: 1000px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 4rem;
+  }
 }
 
 @media only screen and (min-width: 750px) {

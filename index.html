@@ -8,6 +8,7 @@
     <title>EveryPage: Never Stop Reading</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./sass/style.css">
+    <link rel="icon" type="image/x-icon" href="/Photos/favicon.png">
 </head>
 
 <body>
@@ -27,8 +28,11 @@
                     </ul>
                 </nav>
             </div>
-
-            <img src="Photos/web_logo.png" alt="logo">
+            <div class="bookshelfBackground">
+                <div class="bookBackground">
+                    <img src="Photos/web_logo.png" alt="logo">
+                </div>
+            </div>
         </div>
     </header>
 
@@ -85,11 +89,14 @@
 
         <div class="comingSoonWrapper">
             <section class="comingSoon">
-                <h1>Coming soon</h1>
-                <p>Meet and share your thoughts with people alike in <span>your community</span></p>
-                <p>Be the first to know our latest updates</p>
+                <h1 class="t1">Coming soon</h1>
+                <div class="middleComponent">
+                    <p class="t2">Meet and share your thoughts with people alike in</p>
+                    <p class="t3">your community</p>
+                </div>
+                <p class="t4">Be the first to know our latest updates</p>
                 <form action="/action_page.php">
-                    <input type="text" id="email" name="email" value="Your email"><br>
+                    <input type="text" id="email" name="email" placeholder="Your email"><br>
                     <input type="submit" value="Submit">
                 </form>
             </section>
@@ -97,61 +104,115 @@
 
         <div class="teamSectionWrapper">
             <section class="teamSection">
-                <h1>Meet the team behind </br>EveryPage</h1>
+                <h1>Meet the team behind EveryPage</h1>
                 <div class="teamContainer">
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Ashim Karki">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Ashim.jpg" class="img-bot" alt="Ashim Karki">
+                            <img src="Photos/Team_resized/Ashim_fun.jpg" class="img-top" alt="Ashim Karki">
+                        </div>
                         <h3>Ashim Karki</h3>
                         <div class="teamPosition">Full Stack Developer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Chumpol M">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Pol.jpg" alt="Chumpol M">
+                            <img src="Photos/Team_resized/Pol_fun.jpg" class="img-top" alt="Chumpol M">
+                        </div>
                         <h3>Chumpol M</h3>
                         <div class="teamPosition">Frontend Developer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Gabriel Gimenes">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Gabriel.jpg" alt="Gabriel Gimenes">
+                            <img src="Photos/Team_resized/Gabriel_fun.jpg" class="img-top" alt="Gabriel Gimenes">
+                        </div>
                         <h3>Gabriel Gimenes</h3>
                         <div class="teamPosition">Full Stack Developer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Shubham Verma">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Shubham.jpg" alt="Shubham Verma">
+                            <img src="Photos/Team_resized/Shubham_fun.jpg" class="img-top" alt="Shubham Verma">
+                        </div>
                         <h3>Shubham Verma</h3>
                         <div class="teamPosition">Full Stack Developer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Tejaswini Kumar">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Tj.jpg" alt="Tejaswini Kumar">
+                            <img src="Photos/Team_resized/Tj_fun.jpg" class="img-top" alt="Tejaswini Kumar">
+                        </div>
                         <h3>Tejaswini Kumar</h3>
                         <div class="teamPosition">Frontend Developer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Dexter Bolasoc">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Dex.jpg" alt="Dexter Bolasoc">
+                            <img src="Photos/Team_resized/Dex_fun.jpg" class="img-top" alt="Dexter Bolasoc">
+                        </div>
                         <h3>Dexter Bolasoc</h3>
                         <div class="teamPosition">UI/UX Designer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Karen Chiu">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Karen.jpg" alt="Karen Chiu">
+                            <img src="Photos/Team_resized/Karen_fun.jpg" class="img-top" alt="Karen Chiu">
+                        </div>
                         <h3>Karen Chiu</h3>
                         <div class="teamPosition">UX Designer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Milly Tsou">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Milly.jpg" alt="Milly Tsou">
+                            <img src="Photos/Team_resized/Milly_fun.jpg" class="img-top" alt="Milly Tsou">
+                        </div>
                         <h3>Milly Tsou</h3>
                         <div class="teamPosition">UI/UX Designer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
                     </div>
                     <div class="teamMember">
-                        <img src="Photos/logo.png" alt="Mita Trisnodjojo">
+                        <div class="card">
+                            <img src="Photos/Team_resized/Mita.jpg" alt="Mita Trisnodjojo">
+                            <img src="Photos/Team_resized/Mita_fun.jpg" class="img-top" alt="Mita Trisnodjojo">
+                        </div>
                         <h3>Mita Trisnodjojo</h3>
                         <div class="teamPosition">UI/UX Designer</div>
-                        <div class="teamSocial">Insert Icons and links here</div>
+                        <div class="teamSocial">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
                     </div>
                 </div>
             </section>

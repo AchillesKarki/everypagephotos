@@ -2,12 +2,116 @@ header {
     background-color: $color-accent-blue;
     .topNavigation {
         text-align: center;
-        img {
-            max-width: 271px;
-        }   
-        @include respond(medium) {
-            img {
-                max-width: 527px;
+        .bookshelfBackground {
+            background-image: url("../../Photos/background-book1.png");
+            background-repeat: no-repeat;
+            background-size: 1440px 720px;
+            background-position-x: center;
+
+            .bookBackground {
+                background-image: url("../../Photos/background-book2.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: 200px;
+
+                img {
+                    margin-top: 6rem;
+                    margin-bottom: 10rem;
+                    max-width: 271px;
+                }   
+
+                @include respond(medium) {
+                    img {
+                        max-width: 527px;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 750px) {
+                .bookBackground {
+                    background-position-y: 300px;
+                }
+            }
+
+            @media screen and (min-width: 950px) {
+                .bookBackground {
+                    background-position-y: 250px;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                .bookBackground {
+                    background-position-y: 200px;
+
+                    img {
+                        margin-bottom: 12rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1700px) {
+                .bookBackground {
+                    background-position-y: 150px;
+
+                    img {
+                        margin-bottom: 14rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1900px) {
+                .bookBackground {
+                    background-position-y: 100px;
+
+                    img {
+                        margin-bottom: 16rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 2200px) {
+                .bookBackground {
+                    background-position-y: 150px;
+
+                    img {
+                        margin-bottom: 18rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 2650px) {
+                .bookBackground {
+                    background-position-y: 120px;
+
+                    img {
+                        margin-bottom: 20rem;
+                    }
+                }
+            }
+
+
+
+            @media screen and (min-width: 3000px) {
+                .bookBackground {
+                    background-position-y: 120px;
+
+                    img {
+                        margin-top: 15rem;
+                        margin-bottom: 22rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 3440px) {
+                .bookBackground {
+                    background-position-y: 120px;
+
+                    img {
+                        margin-top: 15rem;
+                        margin-bottom: 22rem;
+                    }
+                }
             }
         }   
     }   
@@ -30,16 +134,45 @@ footer {
     padding: 3.5% 3.5% 0 3.5%;
     max-width: 1440px;
     margin: 0 auto;
+    background-image: url("../../Photos/BG_lets\ connect.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
 
     @include respond(large) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
 
+    .contactPage {
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        @media screen and (min-width: 750px) {
+            h2 {
+                font-size: 3rem;
+                
+            }
+    
+            p {
+                margin-top: 0;
+                font-size: 1.25rem;
+            }   
+        }
     }
 
     .comingSoonApp {
         padding: 10%;
+
         h2 {
             color: $color-primary-light;
             text-align:center;
@@ -51,13 +184,10 @@ footer {
 
         @include respond(medium) {
             img[alt~="EverypageLogo"] {
-
                 display: unset;
                 max-width: 94px;
                 @include centerContents
-                
             }
-    
         }
         .comingsoon-wrapper {
             display: flex;
@@ -66,7 +196,20 @@ footer {
             justify-content: center;
 
             p {
-                font-weight: $bold-weight;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: $color-primary-light;
+                padding-right: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 750px) {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
             }
         }
     }
