@@ -1,9 +1,13 @@
 body {
-    font-family: $font_sans;
-    line-height: 1.5;
-  }
+  font-family: $font_sans;
+  line-height: 1.5;
+}
 
-h1, h2, h3, p {
-    font-family: $font_serif;
+h1, h2, h3, .logo {
+  font-family: $font_serif;
+}
+
+p {
+font-family: $font_sans;
 }
 
