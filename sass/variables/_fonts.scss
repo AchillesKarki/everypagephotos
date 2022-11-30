@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: 400;
+    src: url("../../Fonts/SofiaPro/Sofia Pro Regular.otf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: 500;
+    src: url("../../Fonts/SofiaPro/Sofia Pro Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: 600;
+    src: url("../../Fonts/SofiaPro/Sofia Pro Semi Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: 700;
+    src: url("../../Fonts/SofiaPro/Sofia Pro Bold.otf") format("truetype");
+}
 
 $font_serif: "Quicksand", georgia, times, "times new roman", serif;
 
-$font_sans: "Poppins", sans-serif, helvetica, arial;
-
+$font_sans: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;

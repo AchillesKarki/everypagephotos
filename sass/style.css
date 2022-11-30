@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  src: url("../../Fonts/SofiaPro/Sofia Pro Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: 500;
+  src: url("../../Fonts/SofiaPro/Sofia Pro Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: 600;
+  src: url("../../Fonts/SofiaPro/Sofia Pro Semi Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: 700;
+  src: url("../../Fonts/SofiaPro/Sofia Pro Bold.otf") format("truetype");
+}
+
 /* RESET ========================= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -346,7 +369,7 @@ template {
 
 /* TYPOGRAPHY ========================= */
 body {
-  font-family: "Poppins", sans-serif, helvetica, arial;
+  font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
   line-height: 1.5;
 }
 
@@ -355,7 +378,7 @@ h1, h2, h3, .logo {
 }
 
 p {
-  font-family: "Poppins", sans-serif, helvetica, arial;
+  font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
 }
 
 /* BASE ELEMENTS ========================= */
@@ -758,7 +781,7 @@ main .comingSoonWrapper .comingSoon .t4 {
     max-width: 550px;
   }
   main .comingSoonWrapper .comingSoon .t1 {
-    font-family: "Poppins", sans-serif, helvetica, arial;
+    font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 800;
@@ -779,7 +802,7 @@ main .comingSoonWrapper .comingSoon .t4 {
     margin: 0 auto;
   }
   main .comingSoonWrapper .comingSoon .t4 {
-    font-family: "Poppins", sans-serif, helvetica, arial;
+    font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0.5rem auto;
@@ -803,13 +826,20 @@ main .teamSectionWrapper .teamSection h1 {
 }
 
 main .teamSectionWrapper .teamSection .teamDescription p {
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1;
   font-weight: 400;
-  font-family: "Poppins", sans-serif, helvetica, arial;
+  font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
   max-width: 960px;
   margin: 0 auto 2rem auto;
+}
+
+@media screen and (min-width: 750px) {
+  main .teamSectionWrapper .teamSection .teamDescription p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
 }
 
 main .teamSectionWrapper .teamSection .teamContainer {
@@ -875,7 +905,7 @@ main .teamSectionWrapper .teamSection .teamContainer .teamMember h3, main .teamS
 }
 
 main .teamSectionWrapper .teamSection .teamContainer .teamMember .teamPosition {
-  font-family: "Poppins", sans-serif, helvetica, arial;
+  font-family: "Sofia Pro", "Quicksand", sans-serif, helvetica, arial;
 }
 
 main .teamSectionWrapper .teamSection .teamContainer .teamMember h3 {
@@ -1055,7 +1085,7 @@ img {
 }
 
 iframe {
-  margin: 0;
+  margin: 0 0 2rem 0;
   padding: 0;
   width: 90%;
   max-width: 900px;
