@@ -53,6 +53,10 @@ main {
         background-position-x: center;
     }
 
+    .featureOne, .featureTwo, .featureThree {
+        //height: 720px;
+    }
+
     .featureOne {
         @include respond(large) {
             display: grid;
@@ -64,7 +68,7 @@ main {
             }
             
             img {
-                max-width: 500px;
+                max-width: 600px;
             }
         }  
     }
@@ -88,7 +92,7 @@ main {
             img {
                 grid-column: 1/-1;
                 grid-row: 1/2;
-                max-width: 500px;
+                max-width: 600px;
             }
         }
     }
@@ -106,7 +110,7 @@ main {
                 padding: 3rem;
             }
             img {
-                max-width: 500px;
+                max-width: 600px;
             }
         }
     }

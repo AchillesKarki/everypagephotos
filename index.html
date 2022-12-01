@@ -19,12 +19,39 @@
                     <p class="logo">
                         every<b>page</b>
                     </p>
-                    <i class="fa-solid fa-bars hamburger"></i>
+                    <a id="hamburgerMenuOpen">
+                        <i class="fa-solid fa-bars hamburger" onClick="toggleNavMenuMobile()"></i>
+                    </a>
+                    <div class="navMenuMobile hideNav" id="navMenuMobile">
+                        <div id="topHeader">
+                            <p class="logo">
+                                every<b>page</b>
+                            </p>
+                            <a id="hamburgerMenuClose" onClick="toggleNavMenuMobile()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+
+                        </div>
+                        <ul>
+                            <li><a href="#" onClick="closeNavMenuMobile()">about</a></li>
+                            <li><a href="#features" onClick="closeNavMenuMobile()">features</a></li>
+                            <li><a href="#team" onClick="closeNavMenuMobile()">team</a></li>
+                            <li><a href="#contact" onClick="closeNavMenuMobile()">contact</a></li>
+                            <li id="downloadProposal" onClick="closeNavMenuMobile()"><a
+                                    href="Proposal/EveryPageProposal_Fin.pdf" target="_blank">download
+                                    proposal</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <ul>
-                        <li><a href="#about">about</a></li>
+                        <li><a href="#">about</a></li>
                         <li><a href="#features">features</a></li>
                         <li><a href="#team">team</a></li>
                         <li><a href="#contact">contact</a></li>
+                        <li id="downloadProposal"><a href="Proposal/EveryPageProposal_Fin.pdf" target="_blank">download
+                                proposal</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -264,16 +291,31 @@
 </html>
 
 <script>
-    myID = document.getElementById("navWrapper");
+    navWrapper = document.getElementById("navWrapper");
 
     var myScrollFunc = function () {
         var y = window.scrollY;
         if (y >= 100) {
-            myID.className = "navWrapper show"
+            navWrapper.className = "navWrapper show"
         } else {
-            myID.className = "navWrapper hide"
+            navWrapper.className = "navWrapper hide"
         }
     };
 
     window.addEventListener("scroll", myScrollFunc);
+
+    mobileDrawer = document.getElementById("navMenuMobile");
+
+    var toggleNavMenuMobile = function () {
+        if (mobileDrawer.className == "navMenuMobile hideNav") {
+            mobileDrawer.className = "navMenuMobile"
+        } else {
+            mobileDrawer.className = "navMenuMobile hideNav"
+        }
+    }
+
+    var closeNavMenuMobile = function () {
+        mobileDrawer.className = "navMenuMobile hideNav"
+    }
+
 </script>
