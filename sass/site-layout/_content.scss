@@ -53,10 +53,6 @@ main {
         background-position-x: center;
     }
 
-    .featureOne, .featureTwo, .featureThree {
-        //height: 720px;
-    }
-
     .featureOne {
         @include respond(large) {
             display: grid;
